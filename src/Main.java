@@ -206,7 +206,7 @@ public class Main {
         int input=0;
         fileSystem.contains();
         while(program){
-            System.out.println("0 - выход из программы\n1 - добавить папку\n2 - добавить файл\n3 - удалить\n4 - переименовать\n5 - просмотр\n6 - сменить папку/файл");
+            System.out.println("0 - выход из программы\n1 - добавить папку\n2 - добавить файл\n3 - удалить\n4 - переименовать\n5 - просмотр\n6 - сменить папку/файл\n7 - найти файл/папку");
             input = s.nextInt();
             switch(input){
                 case(0):
@@ -250,6 +250,7 @@ public class Main {
                     fileSystem.contains();
                     break;
                 case(7):
+                    System.out.println("Введите маску поиска");
                     String key = null;
                     while(key==null) {
                         key=s.nextLine();
